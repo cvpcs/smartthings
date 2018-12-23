@@ -30,12 +30,7 @@ preferences {
     page(name: "mainPage", title: "Install Video Camera", install: true, uninstall:true) {
         section("Camera Settings") {
             label(name: "label", title: "Name", required: true)
-            input("camera","number", title: "Camera", description: "Enter the number for the camera you wish to capture from the NVR (0-16)", required: true, displayDuringSetup: true)
-        	input("stream","enum", title: "Stream", description: "Select the stream type to capture", required: true, defaultValue: "main",
-                    options: [
-                        ["main":"Clear"],
-                        ["sub":"Fluent"],
-                    ], displayDuringSetup: true)
+            input("camera","text", title: "Camera", description: "Enter the path for the camera you wish to capture from the NVR", required: true, displayDuringSetup: true)
         }
     }
     
@@ -55,8 +50,7 @@ def updated() {
 }
 
 def initialize() {
-    def cameraPadded = "${camera}".padLeft(2, '0');
-    state.uri = "rtsp://${parent.user}:${parent.pass}@${parent.host}:${parent.port}/h264Preview_${cameraPadded}_${stream}"
+    state.uri = "rtsp://${parent.user}:${parent.pass}@${parent.inhost}:${parent.port}/${camera}"
     log.debug "uri is ${state.uri}"
 
     try {
@@ -73,6 +67,7 @@ def initialize() {
 
 private removeChildDevices(delete) {
     delete.each {
+    	log.debug "deleting device ${it.deviceNetworkId}"
         deleteChildDevice(it.deviceNetworkId)
     }
 }
