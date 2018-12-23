@@ -122,5 +122,5 @@ def start() {
 }
 
 def getInHomeURL() {
-	 [InHomeURL: parent.state.inuri]
+	 [InHomeURL: parent.state.uri]
 }
