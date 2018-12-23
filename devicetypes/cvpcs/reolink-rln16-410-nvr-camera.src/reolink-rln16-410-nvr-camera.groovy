@@ -20,7 +20,7 @@ metadata {
 		capability "Video Camera"
 		capability "Video Capture"
 		capability "Refresh"
-		capability "Switch"
+		//capability "Switch"
 
 		// custom commands
 		command "start"
@@ -100,6 +100,8 @@ def configure() {
 
 def start() {
 	log.trace "start()"
+    log.debug "utilizing device stream: ${parent.state.uri}"
+    
 	def dataLiveVideo = [
 		OutHomeURL  : parent.state.uri,
 		InHomeURL   : parent.state.uri,
@@ -120,5 +122,5 @@ def start() {
 }
 
 def getInHomeURL() {
-	 [InHomeURL: parent.state.uri]
+	 [InHomeURL: parent.state.inuri]
 }
