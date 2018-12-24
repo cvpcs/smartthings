@@ -17,7 +17,8 @@
 import groovy.json.JsonSlurper
 
 metadata {
-	definition (name: "Virtual Presence Sensor", namespace: "cvpcs", author: "Austen Dicken") {
+	definition (name: "Virtual Presence Sensor", namespace: "cvpcs", author: "Austen Dicken", executeCommandsLocally: true) {
+    	capability "Actuator"
 		capability "Presence Sensor"
 		capability "Sensor"
 
