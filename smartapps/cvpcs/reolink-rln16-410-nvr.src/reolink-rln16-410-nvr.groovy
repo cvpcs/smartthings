@@ -41,7 +41,7 @@ preferences {
             input("host", "string", title: "IP/Hostname", required: true)
             input("port", "number", title: "Port", required: true)
             input("user", "string", title: "Username", required: true)
-            input("pass", "string", title: "Password", required: true)
+            input("pass", "password", title: "Password", required: true)
         }
     }
 }
