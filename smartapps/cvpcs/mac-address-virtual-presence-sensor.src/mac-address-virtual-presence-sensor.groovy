@@ -21,9 +21,9 @@ definition(
     author: "Austen Dicken",
     description: "Child MAC Address Virtual Presence Sensor SmartApp",
     category: "My Apps",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png")
+    iconUrl: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/mac-address-virtual-presence-sensor-webapi.src/WiFi.png",
+    iconX2Url: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/mac-address-virtual-presence-sensor-webapi.src/WiFi@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/mac-address-virtual-presence-sensor-webapi.src/WiFi@2x.png")
 
 
 preferences {
