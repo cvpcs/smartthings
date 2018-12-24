@@ -20,9 +20,9 @@ definition(
     author: "Austen Dicken",
     description: "This smartapp installs the NVR app for adding cameras connected to a ReoLink RLN16-410 NVR.",
     category: "Safety & Security",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+    iconUrl: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/reolink-rln16-410-nvr.src/Reolink.png",
+    iconX2Url: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/reolink-rln16-410-nvr.src/Reolink@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/reolink-rln16-410-nvr.src/Reolink@2x.png",
     singleInstance: true)
 
 
