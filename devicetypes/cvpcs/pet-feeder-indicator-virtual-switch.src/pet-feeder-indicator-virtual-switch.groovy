@@ -23,12 +23,12 @@ metadata {
     preferences {}
 
     tiles(scale: 2) {
-        multiAttributeTile(name:"switch", type: "lighting", width: 6, height: 4, canChangeIcon: true){
+        multiAttributeTile(name:"switch", type: "lighting", width: 6, height: 4, canChangeIcon: false){
             tileAttribute ("device.switch", key: "PRIMARY_CONTROL") {
-                attributeState "on", label:'Fed', action:"switch.off", icon:"st.Home.home30", backgroundColor:"#79b821", nextState:"turningOff"
-                attributeState "off", label:'Not Fed', action:"switch.on", icon:"st.Home.home30", backgroundColor:"#FFFFFF", nextState:"turningOn", defaultState: true
-                attributeState "turningOn", label:'Setting Fed', action:"switch.off", icon:"st.Home.home30", backgroundColor:"#79b821", nextState:"turningOn"
-                attributeState "turningOff", label:'Setting Not Fed', action:"switch.on", icon:"st.Home.home30", backgroundColor:"#FFFFFF", nextState:"turningOff"
+                attributeState "on", label:'Fed', action:"switch.off", icon:"https://raw.githubusercontent.com/cvpcs/smartthings/master/devicetypes/cvpcs/pet-feeder-indicator-virtual-switch.src/pet-feeder-indicator-fed.png", backgroundColor:"#79b821", nextState:"turningOff"
+                attributeState "off", label:'Not Fed', action:"switch.on", icon:"https://raw.githubusercontent.com/cvpcs/smartthings/master/devicetypes/cvpcs/pet-feeder-indicator-virtual-switch.src/pet-feeder-indicator-not-fed.png", backgroundColor:"#FFFFFF", nextState:"turningOn", defaultState: true
+                attributeState "turningOn", label:'Fed', action:"switch.off", icon:"https://raw.githubusercontent.com/cvpcs/smartthings/master/devicetypes/cvpcs/pet-feeder-indicator-virtual-switch.src/pet-feeder-indicator-fed.png", backgroundColor:"#79b821", nextState:"turningOn"
+                attributeState "turningOff", label:'Not Fed', action:"switch.on", icon:"https://raw.githubusercontent.com/cvpcs/smartthings/master/devicetypes/cvpcs/pet-feeder-indicator-virtual-switch.src/pet-feeder-indicator-not-fed.png", backgroundColor:"#FFFFFF", nextState:"turningOff"
             }
         }
 
