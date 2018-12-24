@@ -19,9 +19,9 @@ definition(
     author: "AUSTEN DICKEN",
     description: "Manages the creation of Virtual Presence Sensor devices based on MAC addresses to be managed via a WebAPI.",
     category: "My Apps",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+    iconUrl: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/mac-address-virtual-presence-sensor-webapi.src/WiFi.png",
+    iconX2Url: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/mac-address-virtual-presence-sensor-webapi.src/WiFi@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/cvpcs/smartthings/master/smartapps/cvpcs/mac-address-virtual-presence-sensor-webapi.src/WiFi@2x.png",
     singleInstance: true)
 
 preferences {
