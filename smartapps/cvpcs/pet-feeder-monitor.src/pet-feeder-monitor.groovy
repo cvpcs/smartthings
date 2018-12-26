@@ -52,10 +52,10 @@ def initialize() {
 	subscribe(sensor, "acceleration.active", accelerationActiveHandler)
         
     log.debug "Scheduling shutoff for indicator switches at ${resetBreakfast}, ${resetLunch}, ${resetDinner}"
-    
-    schedule(resetBreakfast, resetHandler)
-    schedule(resetLunch, resetHandler)
-    schedule(resetDinner, resetHandler)
+
+    schedule(resetBreakfast, resetHandlerBreakfast)
+    schedule(resetLunch, resetHandlerLunch)
+    schedule(resetDinner, resetHandlerDinner)
 }
 
 def accelerationActiveHandler(evt) {
@@ -74,6 +74,10 @@ def accelerationActiveHandler(evt) {
     	switches.each { it.on() }
 	}
 }
+
+def resetHandlerBreakfast() { resetHandler() }
+def resetHandlerLunch() { resetHandler() }
+def resetHandlerDinner() { resetHandler() }
 
 def resetHandler() {
     switches.each { it.off() }
