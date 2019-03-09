@@ -14,7 +14,7 @@
  */
 
 metadata {
-	definition (name: "Z-Wave Door/Window Sensor for Carbon Monoxide Relay", namespace: "cvpcs", author: "Austen Dicken", genericHandler: "Z-Wave", mnmn: "SmartThings", vid: "generic-smoke") {
+	definition (name: "Z-Wave Door/Window Sensor for Carbon Monoxide Relay", namespace: "cvpcs", author: "Austen Dicken", genericHandler: "Z-Wave") {
 		capability "Smoke Detector"
 		capability "Carbon Monoxide Detector"
 		capability "Sensor"
