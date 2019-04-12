@@ -19,9 +19,8 @@ definition(
     author: "Austen Dicken",
     description: "Monitors an accelerometer and turns on an indicator switch to indicate that a pet has been fed based on movement, then turns the switch off after a given amount of time.",
     category: "My Apps",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png")
+    iconUrl: "https://raw.githubusercontent.com/cvpcs/smartthings/master/devicetypes/cvpcs/pet-feeder-indicator-virtual-switch.src/pet-feeder-indicator-fed.png",
+    iconX2Url: "https://raw.githubusercontent.com/cvpcs/smartthings/master/devicetypes/cvpcs/pet-feeder-indicator-virtual-switch.src/pet-feeder-indicator-fed.png")
 
 
 preferences {
